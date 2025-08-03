@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auth Pages</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+
+    <nav class="navbar left">
+      <a href="/login.html">
+        <img src="./Logo.png" alt="Logo" class="logo" />
+      </a>
+    </nav>
+
+    <!-- SIGN UP PAGE -->
+    <div class="auth-container" id="signup">
+      <div class="auth-image" style="margin-top: 20px;">
+        <img src="/images/signupIcon.png" alt="Login Illustration" />
+      </div>
+      <div class="auth-form">
+        <h2>Sign up</h2>
+        <p>Let's get you all set up so you can access your personal account.</p>
+        <form action="login.html" class="form-grid">
+          <div class="form-row">
+            <input type="text" placeholder="First Name" required />
+            <input type="text" placeholder="Last Name" required />
+          </div>
+
+          <div class="form-row">
+            <input type="email" placeholder="Email" required />
+            <input type="text" placeholder="Phone Number" required />
+          </div>
+
+          <input type="password" placeholder="Password" required />
+
+          <input type="password" placeholder="Confirm Password" required />
+
+          <label class="checkbox-label">
+            <input type="checkbox" required /> I agree to all the
+            <a href="#">Terms</a>
+            <span>and</span>
+            <a href="#">Privacy Policies</a>
+          </label>
+
+          <br />
+          <input type="submit" value="Create account" />
+          <!-- <a href="login.html">
+          </a> -->
+
+          <div class="form-footer">
+            Already have an account? <a href="login.html">Login</a>
+          </div>
+        </form>
+
+        <div class="divider">
+          <span>Or Sign up with</span>
+        </div>
+
+        <div class="socials-icons">
+          <div class="icon-box">
+            <img src="./icons/facebook.png" alt="Facebook" />
+          </div>
+          <div class="icon-box">
+            <img src="./icons/google.png" alt="Google" />
+          </div>
+          <div class="icon-box">
+            <img src="./icons/apple.png" alt="Apple" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
