@@ -1,18 +1,33 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 
 function ForgetPassword() {
+  const [email, setEmail] = useState("");
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    navigate("/change-password"); 
+  };
+
   return (
     <>
       <div className="auth-container" id="set-password">
         <div className="auth-form">
           <h2>Forgot your password?</h2>
           <p>
-            Don't worry, happens to all of us. Enter your email below to recover your password
+            Don't worry, happens to all of us. Enter your email below to recover
+            your password
           </p>
 
-          <form action="/change-password">
-            <input type="email" placeholder="Enter your email" required />
+          <form onSubmit={handleSubmit}>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
             <input type="submit" value="Submit" />
           </form>
 
@@ -33,11 +48,14 @@ function ForgetPassword() {
           </div>
         </div>
         <div className="auth-image">
-          <img src="/images/ForgotPasswordIcon.png" alt="Forgot Password Illustration" />
+          <img
+            src="/images/ForgotPasswordIcon.png"
+            alt="Forgot Password Illustration"
+          />
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default ForgetPassword
+export default ForgetPassword;
