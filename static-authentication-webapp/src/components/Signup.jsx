@@ -23,21 +23,16 @@ function Signup() {
       [name]: type === 'checkbox' ? checked : value,
     }));
 
-    // Clear error while typing
     setError('');
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Password match validation
     if (formData.password !== formData.confirmPassword) {
       setError('Passwords do not match.');
       return;
     }
-
-    // TODO: Send to backend here if needed
-
     navigate('/login');
   };
 
@@ -48,7 +43,7 @@ function Signup() {
           <img src="/images/signupIcon.png" alt="Signup Illustration" />
         </div>
         <div className="auth-form">
-          <h2>Sign up</h2>
+          <h2>Sign Up</h2>          
           <p>Let's get you all set up so you can access your personal account.</p>
           <form onSubmit={handleSubmit} className="form-grid">
             <div className="form-row">

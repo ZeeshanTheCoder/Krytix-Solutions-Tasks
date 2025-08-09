@@ -70,13 +70,14 @@ body {
   flex: 1;
   min-width: 300px;
   padding: 2rem;
-  height: 80vh;
+  height: auto;
 }
 
 .auth-form {
   padding: 3rem;
   justify-content: center;
   display: flex;
+  height: auto;
   flex-direction: column;
 }
 
