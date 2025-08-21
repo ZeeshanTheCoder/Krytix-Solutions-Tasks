@@ -5,8 +5,6 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import Navbar from "./components/Navbar";
 import Signup from "./components/Signup";
 import { useEffect, useState } from "react";
-import ChangePassword from "./components/ChangePassword";
-import ForgetPassword from "./components/ForgetPassword";
 
 const ProtectedRoute = ({ children }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -45,26 +43,6 @@ function App() {
           element={
             <ProtectedRoute>
               <Signup />
-            </ProtectedRoute>
-          } 
-          errorElement={<ErrorBoundary />} 
-        />
-
-        <Route 
-          path="/change-password" 
-          element={
-            <ProtectedRoute>
-              <ChangePassword />
-            </ProtectedRoute>
-          } 
-          errorElement={<ErrorBoundary />} 
-        />
-
-        <Route 
-          path="/forgot-password" 
-          element={
-            <ProtectedRoute>
-              <ForgetPassword />
             </ProtectedRoute>
           } 
           errorElement={<ErrorBoundary />} 
