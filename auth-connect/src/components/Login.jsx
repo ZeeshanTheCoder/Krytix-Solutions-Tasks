@@ -90,7 +90,7 @@
                 <label className="checkbox-label">
                   <input type="checkbox" name="rememberMe" /> Remember me
                 </label>
-                <NavLink to="">Forgot Password?</NavLink>
+                <NavLink to="/forgot-password">Forgot Password?</NavLink>
               </div>
               <br />
               <input
