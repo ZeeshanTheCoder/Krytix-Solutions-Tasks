@@ -2,7 +2,7 @@
 
 🎯 A modern, responsive **portfolio web app** built with **React** and **Vite** to showcase your projects, resume, and contact details in style.
 
-🔗 **Live Demo**: [View on Netlify](https://zeeshanthecoder.vercel.app/) <!-- Replace # with your actual Netlify link -->
+🔗 **Live Demo**: [View on Vercel](https://zeeshanthecoder.vercel.app/) <!-- Replace # with your actual Netlify link -->
 
 ---
 
