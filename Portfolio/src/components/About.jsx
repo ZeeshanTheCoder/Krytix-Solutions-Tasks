@@ -81,7 +81,7 @@ const About = () => {
   const aboutInfo = [
     { label: "Name", value: "Muhammad Zeeshan" },
     { label: "Gender", value: "Male" },
-    { label: "Age", value: "18 Years Old" },
+    { label: "Age", value: "19 Years Old" },
     { label: "Status", value: "Unmarried😁" },
     { label: "City", value: "Karachi" },
     { label: "Nationality", value: "Pakistani" },
